@@ -490,8 +490,7 @@
               <input type="tel" id="phone" name="phone" class="form-control" />
             </div>
             <button
-              data-toggle="modal"
-              data-target="#exampleModal"
+              data-toggle="modal" data-target="#exampleModal"
               id="button"
               type="submit"
               class="btn btn-primary"
@@ -500,46 +499,24 @@
             </button>
           </form>
         </div>
-      </div>
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">
-                Form Submission
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              Information Submitted
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Form Submission</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Information Submitted
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -612,5 +589,19 @@
 
     // make a marker for each feature and add to the map
     new mapboxgl.Marker(el).setLngLat([13.5736508, 52.4269251]).addTo(map);
+  </script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw60ylJ6B-zmc4ue7KXfwoHk4kps3-nmB_fg2NuusKuZxodFGJ-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    let change = document.querySelector("#button")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>
+          console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+        form.reset()
+    })
   </script>
 </html>
