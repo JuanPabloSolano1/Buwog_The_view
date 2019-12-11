@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit-icons.min.js"></script>
     <style>
       html,
       body {
         overflow-x: hidden;
       }
       ul#list {
-        padding-left: 10px;
+        padding-left: 5px;
       }
       form {
         margin: 0 auto;
@@ -20,8 +26,8 @@
         padding-bottom: 40px;
         background-color: #707173;
         color: white;
-        opacity: 0.8;
         font-family: "Open Sans", sans-serif !important;
+        margin-bottom: 30px;
       }
 
       #title {
@@ -62,28 +68,30 @@
         }
       } 
       #text {
-        width: 90%;
-        left: 5%;
+        width: 41%;
         position: absolute;
-       margin-right: 60px;
-       margin-left: 60px;
         z-index: 90;
         color: white;
-        top: 20%;
+        top: 10%;
         margin: 0 auto; 
         text-align: center;
-        /* width: 90%; */
+        float: right;
         padding-bottom: 90px;
         font-size: 1.9vw;
         white-space: wrap;
-        letter-spacing: 2px;
         padding-top: 30px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0,0,0, 0.63);
         font-family: "Open Sans", sans-serif;
         line-height: 1.6;
+        letter-spacing: 3px;
+        margin-left: 800px;
+        padding-right: 20px;
+        padding-left: 30px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        
       }
       #image {
-        margin-top: 20px;
+        margin-top: 90px;
         height: auto;
         width: 320px;
       }
@@ -99,7 +107,7 @@
         font-family: "Open Sans", sans-serif;
         cursor: pointer;
       }
-      p {
+      #contact p {
         padding-left: 10px;
         font-family: "Open Sans", sans-serif;
         color: #212529;
@@ -112,11 +120,12 @@
         background-color: white;
         font-weight: 40px;
         font-family: "Open Sans", sans-serif;
+        
       }
       #services {
         text-align: center;
         padding-top: 50px;
-        color: black;
+       font-weight: 400;
       }
       #information {
         height: 400px;
@@ -236,6 +245,7 @@
       #map {
         height: 430px;
         margin-top: 40px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
       }
       .mapboxgl-marker {
         background-image: url("map-marker-alt-solid.svg");
@@ -292,6 +302,121 @@
       font-family: "Open Sans", sans-serif !important;
       color: white !important;
     }
+    .mapboxgl-ctrl.mapboxgl-ctrl-group.mapboxgl-ctrl-styles button{
+      width: 50px;
+    }
+    #home-title{
+      line-height:35px;
+      margin-bottom: 15px;
+      color: #ec741b;
+      font-size: 20px;
+      text-align: left;
+    }
+    #home-text{
+      font-size: 16px;
+      width: 540px;
+      text-align: left;
+      line-height: 32px;
+      font-weight: lighter;
+      padding-left: 0px !important;
+    }
+    #home-paragraph{
+      color: white !important;
+      text-align: justify;
+      text-justify: inter-word;
+
+    }
+    #home-list{
+     font-weight: bold;
+     margin-left: 40px;
+     color: white;
+    }
+   *{
+    -webkit-font-smoothing: antialiased;
+   }
+   #final-form{
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); */
+   }
+   .location{
+    font-family: "Open Sans", sans-serif;
+    /* color: white; */
+    width: 550px;
+    margin-left: 80px;
+    line-height: 32px;
+    color: #717273;
+    font-size: 16px;
+    font-weight: 550;
+   }
+   #location-container{
+     margin-top: 10px;  
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+     padding-bottom: 40px;
+     padding-top: 40px;
+   }
+   #location-image{
+     width: 600px;
+     height: auto;
+     margin-right: 30px;
+     margin-top: 60px;
+     margin-left: 50px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+   }
+   #location-div{
+    margin-bottom: 40px;
+    padding-top: 10px;
+    margin-top: 50px;
+    background-color: white;
+   }
+   #location-text{
+    padding-top: 30px;   
+    padding-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-left: 30px;
+    background-color: white;
+    text-align: justify;
+    text-justify: inter-word;
+    /* background-color: rgba(0,0,0, 0.63); */
+   }
+   #location-list ul {
+    font-weight: bold;
+   }
+   #phone-icon{
+     width: 30px;
+     height: auto;
+     margin-left: 20px;
+   }
+   #contact-phone{
+     padding-right: 10px;
+     font-size: 15px;
+     margin-left: 2px;
+     color: #717273;
+     font-family: "Open Sans", sans-serif;
+   }
+   #send{ 
+    font-size: 15px;
+    margin-left: 4px;
+    text-decoration: none;
+    color: #717273;
+    cursor:pointer;
+    font-family: "Open Sans", sans-serif;
+   }
+   #send:hover{
+    color: #717273; 
+    text-decoration: none;
+    cursor:pointer;
+   }
+   nav.navbar.navbar-light.bg-light{
+     color: white !important;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+     position: fixed;
+     width: 100%;
+     z-index: 100;
+   }
+   .bg-light{
+     color: white !important;
+   }
     </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -340,6 +465,15 @@
     ></script>
   </head>
   <body>
+    <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <p class="navbar-brand" href="#">
+    <img src="phone-solid.svg" width="25" height="25" class="d-inline-block align-top" alt="" style="margin-top: 5px;">
+    <span id="contact-phone">+49 (30) 3385391915</span>
+    <a href="https://www.buwog.de/de/project/reservation/buwog-xbergliving?microsite=true"><img src="envelope-regular.svg" width="25" height="25" class="d-inline-block align-top" alt="" style="margin-top: 5px;"></a>
+    <a href="https://www.buwog.de/de/project/reservation/buwog-xbergliving?microsite=true"><span id="send">Jetzt Anfrage Senden</span></a>
+  </p>  
+   </nav>
     <div class="text-center">
       <img id="image" src="picture1" class="img-fluid" alt="Responsive image" />
     </div>
@@ -355,31 +489,33 @@
         data-ride="carousel"
         data-interval="2000"
       > -->
-        <div class="carousel-inner">
+        <div id="main-container" class="carousel-inner">
           <div id="content" style="background-color: rgba(0, 0, 0, 0.5);">
             <!-- <h1 id="title">BUWOG THE VIEW</h1> -->
-            <p id="text">
-              <strong>Welcome Home</strong><br />
-              <br />
-              New residential quarter 52º Nord is being built close to both
-              Berlin's city center <br />
-              and idyllic lakeland. Located directly on the river Dahme.<br />
-              <br />
-              <br />
-              The ensemble brings together a total of 63 condominiums housed in
-              three buildings <br />
-              with every apartment boasting a direct view over the water.<br />
-              <br />
-              <br />
-              Directly in front of the ensemble runs a peaceful
-              600-metre-long promenade for rest and relaxation.
-            </p>
+            <div id="text">
+                <h3 id="home-title">BUWOG THE VIEW <br> GRANTS SOUTHWATERN BERLIN AN ARCHITECTURAL HIGHLIGHT ON<br> THE BANKS OF THE DAHME.</h3>
+              <div id="home-text">
+               <p id="home-paragraph">The ensemble is located in residential quarter 52º Nord. 
+
+                  It brings together a total of 63 condominiums housed in three buildings, with every apartment boasting a direct view over the water. 
+                  
+                  Directly in front of the ensemble runs a peaceful, 600-metre-long promenade for rest and relaxation. BUWOG THE VIEW consists of three separate buildings (House I, House II, House III) and represents the latest construction phase in the ongoing development of 52º Nord.
+                  
+                  Project Highlights: 
+                <ul id="home-list">
+                 <li> Water views for each and every apartment</li>
+                 <li>Master bedrooms with ensuite bathrooms</li>
+                 <li>Underground parking places optionally available (for electric cars on request)</li>
+                </ul>    
+                </p> 
+              </div>  
+              </div>
           </div>
           <div class="carousel-item active">
             <img
               style="opacity: 1;"
               id="images"
-              src="main_pic.jpg"
+              src="https://drive.google.com/uc?export=view&id=1Nco7NOihE6hWxX38QVOWG6xpwj2UcR9Q"
               class="img-fluid" alt="Responsive image"
               alt="..."
               style=" linear-gradient(
@@ -408,7 +544,7 @@
           </a> -->
         </div>
         <div id="cards">
-          <h2 style="color:#ec741b; font-weight: bold" id="services">
+          <h2 style="color:#ec741b;" id="services">
             Project Details
           </h2>
           <ul id="list">
@@ -435,7 +571,16 @@
               <p class="card-text">1-3</p>
               <br />
             </div>
+            <div id="battery">
+                <img id="car-battery" src="search-location-solid.svg" />
+                <br />
+                <h4 class="card-info">Location</h4>
+                <p class="card-text">Berlin - Grünau</p>
+                <br />
+              </div>
           </ul>
+        </div>
+        <div>
         </div>
         <!-- <div id="information">
         <div id="card1" class="cards">
@@ -458,7 +603,7 @@
               <img src="space1.jpg" />
             </div>
             <div>
-              <img src="https://drive.google.com/uc?export=view&id=1Nco7NOihE6hWxX38QVOWG6xpwj2UcR9Q" />
+              <img src="main_pic.jpg" />
             </div>
             <div>
               <img src="space3.jpg" />
@@ -485,6 +630,34 @@
             </div>
           </div>
         </div>
+      <h2 id="get">Location</h2>
+        <div id="location-div">
+        <div id="location-container">
+          <div id="location-text">
+          <p class="location">At 52º Nord, the best of country life brings waterside leisure and recreation together with optimal connections to the city. This is fundamental to the increasing popularity of Treptow-Köpenick in recent years, helped along by positive economic developments in the Adlershof area such as the establishment of nearby science and business development centre WISTA.
+            All the advantages of this top location at a glance:
+          <p class="location"> Perfect connections to city highways (A 113, A 117, A10)</p> 
+          <ul id="location-list">
+          <li class="location"> Approx. 10 minutes by car to WISTA, Europe's most modern technology park </li> 
+          <li class="location"> Approx. 15 minutes by car to Berlin's Schönefeld airport</li>
+          <li class="location"> Approx. 40 minutes from S-Bahn train station Grünau to Alexanderplatz, Friedrichstrasse, and Berlin central station</li>
+          </ul>
+            </p>
+          </div>
+            <img
+            style="opacity: 1;"
+            id="location-image"
+            src="https://drive.google.com/uc?export=view&id=18pJSBaW9Fmgjy-dEu4_T4euosBiBiBj1"
+            class="img-fluid" alt="Responsive image"
+            alt="..."
+            style=" linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),"
+          />  
+        </div>
+        <div id="map"></div>
+      </div>
         <div>
           <h2 id="get">Get in Touch</h2>
           <p id="address">
@@ -492,7 +665,7 @@
 
             +49 (0) 30 - 338 539 1915
           </p>
-          <form name="submit-to-google-sheet">
+          <form id="final-form" name="submit-to-google-sheet">
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
               <input
@@ -613,12 +786,11 @@
       });
     </script>
   </body>
-  <div id="map"></div>
   <footer>
   <p>Copyright © 2019 - BUWOG</p>
   </footer> 
   <script>
-    mapboxgl.accessToken =
+      mapboxgl.accessToken =
       "pk.eyJ1IjoianVhbnBhYmxvc29sYW5vMTIzIiwiYSI6ImNrMmVqd2MyODA2NTEzb3M1NGUwZTdjZjYifQ.6OgA4kKm-Jhk-WEmROqKZg";
     var map = new mapboxgl.Map({
       container: "map", // container id
@@ -633,7 +805,6 @@
     el.style.width = "45px";
     el.style.height = "60px";
     el.style.backgroundImage.src = "map-marker-solid.svg";
-
     // make a marker for each feature and add to the map
     new mapboxgl.Marker(el).setLngLat([13.5736508, 52.4269251]).addTo(map);
   </script>
@@ -651,4 +822,5 @@
         form.reset()
     })
   </script>
+  <script src="map.js"></script>
 </html>

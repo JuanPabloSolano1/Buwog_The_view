@@ -12,8 +12,10 @@
     "font-awesome": "4.7.0",
     "jquery": "3.4.1",
     "mapbox": "1.0.0-beta10",
+    "mapbox-gl-controls": "1.5.9",
     "mapbox.js": "3.2.1",
-    "slick-carousel": "1.8.1"
+    "slick-carousel": "1.8.1",
+    "ui-kit": "0.19.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.6.1"
