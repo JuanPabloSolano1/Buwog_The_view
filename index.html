@@ -381,6 +381,8 @@
    }
    #location-list ul {
     font-weight: bold;
+    text-align: justify;
+    text-justify: inter-word;
    }
    #phone-icon{
      width: 30px;
@@ -396,7 +398,7 @@
    }
    #send{ 
     font-size: 15px;
-    margin-left: 4px;
+    margin-left: 6px;
     text-decoration: none;
     color: #717273;
     cursor:pointer;
@@ -416,6 +418,28 @@
    }
    .bg-light{
      color: white !important;
+   }
+   #features-button{
+    background-color: white !important;
+    border-color: #ec741b !important;
+    color: #ec741b !important;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 1.3rem !important;
+   }
+   .feature-check{
+     width: 50px;
+     height: auto;
+   }
+   img.feature-check{
+     margin: 0 auto;
+   }
+   #features{
+     display: flex;
+     margin-left: 400px;
+     color: #717273;
+   }
+   #feature-text{
+     margin-left: 300px;
    }
     </style>
     <meta charset="utf-8" />
@@ -469,7 +493,7 @@
 <nav class="navbar navbar-light bg-light">
   <p class="navbar-brand" href="#">
     <img src="phone-solid.svg" width="25" height="25" class="d-inline-block align-top" alt="" style="margin-top: 5px;">
-    <span id="contact-phone">+49 (30) 3385391915</span>
+    <span id="contact-phone">Kontaktieren Sie uns unverbindlich:  +49 (30) 3385 3919 15</span>
     <a href="https://www.buwog.de/de/project/reservation/buwog-xbergliving?microsite=true"><img src="envelope-regular.svg" width="25" height="25" class="d-inline-block align-top" alt="" style="margin-top: 5px;"></a>
     <a href="https://www.buwog.de/de/project/reservation/buwog-xbergliving?microsite=true"><span id="send">Jetzt Anfrage Senden</span></a>
   </p>  
@@ -493,7 +517,7 @@
           <div id="content" style="background-color: rgba(0, 0, 0, 0.5);">
             <!-- <h1 id="title">BUWOG THE VIEW</h1> -->
             <div id="text">
-                <h3 id="home-title">BUWOG THE VIEW <br> GRANTS SOUTHWATERN BERLIN AN ARCHITECTURAL HIGHLIGHT ON<br> THE BANKS OF THE DAHME.</h3>
+                <h3 id="home-title">BUWOG THE VIEW- <br> GRANTS SOUTHWATERN BERLIN AN ARCHITECTURAL HIGHLIGHT ON<br> THE BANKS OF THE DAHME.</h3>
               <div id="home-text">
                <p id="home-paragraph">The ensemble is located in residential quarter 52º Nord. 
 
@@ -581,6 +605,29 @@
           </ul>
         </div>
         <div>
+            <p>
+              <div class="text-center">
+                <button id="features-button"class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Project Features
+                </button>
+              </div>  
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+               <div id="features" class="text-center">  
+                 <div>
+                  <img class="feature-check" src="check-square-regular.svg"/><p>Elevator</p>                  <img class="feature-check" src="check-square-regular.svg"/><p>Floor-to-ceiling windows</p>
+                  <img class="feature-check" src="check-square-regular.svg"/><p>Parquet flooring</p>
+                  <img class="feature-check" src="check-square-regular.svg"/><p>Underground garage</p>
+                </div>  
+               <div id="feature-text">
+                  <img class="feature-check" src="check-square-regular.svg"/><p>Terrace</p>
+                  <img class="feature-check" src="check-square-regular.svg"/><p> Underfloor heating</p>
+                  <img class="feature-check" src="check-square-regular.svg"/><p>Balcony</p>
+               </div>  
+              </div>  
+              </div>  
+              </div>
         </div>
         <!-- <div id="information">
         <div id="card1" class="cards">
