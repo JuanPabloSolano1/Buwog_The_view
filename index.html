@@ -76,7 +76,7 @@
         margin: 0 auto; 
         text-align: center;
         float: right;
-        padding-bottom: 90px;
+        padding-bottom: 60px;
         font-size: 1.9vw;
         white-space: wrap;
         padding-top: 30px;
@@ -341,22 +341,22 @@
     font-family: "Open Sans", sans-serif;
     /* color: white; */
     width: 550px;
-    margin-left: 80px;
+    margin-left: 50px;
     line-height: 32px;
     color: #717273;
     font-size: 16px;
     font-weight: 550;
+    margin-top: 10px;
    }
    #location-container{
      margin-top: 10px;  
      width: 100%;
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-     padding-bottom: 40px;
      padding-top: 40px;
    }
    #location-image{
-     width: 600px;
+     width: 650px;
      height: auto;
      margin-right: 30px;
      margin-top: 60px;
@@ -366,7 +366,7 @@
    #location-div{
     margin-bottom: 40px;
     padding-top: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: white;
    }
    #location-text{
@@ -377,12 +377,17 @@
     background-color: white;
     text-align: justify;
     text-justify: inter-word;
+    color: #333
     /* background-color: rgba(0,0,0, 0.63); */
    }
    #location-list ul {
     font-weight: bold;
     text-align: justify;
     text-justify: inter-word;
+    list-style-type: none;
+    margin-left: -2em;
+   }
+   #location-list li{
    }
    #phone-icon{
      width: 30px;
@@ -425,6 +430,10 @@
     color: #ec741b !important;
     font-family: "Open Sans", sans-serif !important;
     font-size: 1.3rem !important;
+    opacity: 0.9;
+   }
+   #features-button:hover{
+     opacity: 1;
    }
    .feature-check{
      width: 50px;
@@ -432,6 +441,7 @@
    }
    img.feature-check{
      margin: 0 auto;
+     padding-bottom: 10px;
    }
    #features{
      display: flex;
@@ -440,6 +450,56 @@
    }
    #feature-text{
      margin-left: 300px;
+   }
+   .card.card-body {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+   }
+   #house1{
+     width: 650px;
+     margin-bottom: 30px;
+     margin-top: 50px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+     padding: 40px 40px 40px 40px;
+     color: #717273;
+     margin: 50px auto;
+     text-align: justify;
+     text-justify: inter-word;
+   }
+   #house2{
+     margin-top: 50px;
+     width: 650px;
+     margin-bottom: 30px;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+     padding: 40px 40px 40px 40px;
+     color: #717273;
+     margin: 50px auto;
+     text-align: justify;
+     text-justify: inter-word;
+     
+   }
+   #house1 h3{
+     margin-top: 20px; 
+     text-align: center;
+     font-family: "Open Sans", sans-serif;
+     color: #ec741b;
+     margin-bottom: 30px;
+   }
+   #house2 h3{
+    margin-top: 20px; 
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #ec741b;
+    margin-bottom: 30px;
+   }
+   #house-color{
+     background-color: #ec741b;
+     height: 10px;
+     width: 50%;
+     margin: 0 auto;
+   }
+   hr{
+     width: 200px;
+     margin: 0 auto;
    }
     </style>
     <meta charset="utf-8" />
@@ -677,6 +737,23 @@
             </div>
           </div>
         </div>
+        <div id="house1">
+          <div id="house-color"></div>
+          <h3>House I and III</h3>
+          <p>
+            Houses I and III are designed by renowned architectural firm PA GmbH Pätzold Architekten, Berlin. Distinctive facade design makes Houses I and III unique: natural wood and the maritime charm of corten steel create a pleasant contrast. To enhance the allusions to shipbuilding and watercraft, Houses I and III possess an extraordinary trapezoidal shape. The arrangement of the living areas at the corners of each building makes for varied views from every apartment: overlooking the water and bathed in sunlight, you're bound to discover delight in the sparkling play of waves time and again.
+          </p>
+          <img src="https://drive.google.com/uc?export=view&id=1FitJUB5EOuvM4MWJcyQzAI9CuJpJfa1T"/>
+        </div>
+        <div id="house2">
+          <div id="house-color"></div>
+          <h3>House II</h3>
+          <p>
+            House II, from the renowned architectural offices of LOVE (Graz, Austria), impresses with its floating footbridges resembling floating jetties and a facade that opens to the east and west. The western side of House II offers a special facade with modern glass folding walls that can be fully opened up to catch the evening sun. Residents of House II enjoy a light and open atmosphere with waterside views direct over the river from large balconies and terraces connected by 'floating jetties' suspended above the ground. This unique footbridge system communicates between the apartments and spacious terraces, providing a common area for recreation and movement.
+          </p>
+          <img src="https://drive.google.com/uc?export=view&id=1FitJUB5EOuvM4MWJcyQzAI9CuJpJfa1T"/>
+        </div>
+        <hr>
       <h2 id="get">Location</h2>
         <div id="location-div">
         <div id="location-container">
