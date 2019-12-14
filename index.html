@@ -991,13 +991,18 @@
     const scriptURL = 'https://script.google.com/macros/s/AKfycbw60ylJ6B-zmc4ue7KXfwoHk4kps3-nmB_fg2NuusKuZxodFGJ-/exec'
     const form = document.forms['submit-to-google-sheet']
     let change = document.querySelector("#button")
+    let checkbox = document.querySelector("#scales")
     form.addEventListener('submit', e => {
       e.preventDefault()
+      if(checkbox.checked == true){
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response =>
           console.log('Success!', response))
         .catch(error => console.error('Error!', error.message))
         form.reset()
+      } else{
+        console.log("no bueno")
+      }
     })
   </script>
   <script src="map.js"></script>
