@@ -3,6 +3,7 @@
   <head>
     <!-- UIkit CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit.min.js"></script>
@@ -538,6 +539,14 @@
         width: 80px !important;
         margin-bottom: 10px;
       }
+      select.form-control{
+        width: 100px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+      select.placeholder{
+        opacity: 0.8;
+      }
     </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -830,6 +839,13 @@
             +49 (0) 30 - 338 539 1915
           </p>
           <form id="final-form" name="submit-to-google-sheet">
+              <div class="form-group">
+                  <select name="genre" class="form-control">
+                    <option class="form-control"value="Mr">Mr.</option>
+                    <option class="form-control"value="Miss">Miss.</option>
+                    <option class="form-control"value="Mrs">Mrs.</option>
+                  </select>
+                 </div> 
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
               <input
@@ -842,6 +858,7 @@
                 required 
               />
             </div>  
+
             <div class="form-group">
               <label for="exampleInputPassword1">First Name</label>
               <input
@@ -866,7 +883,7 @@
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Phone Number</label>
-              <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter Phone Number" />
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter Phone Number" required />
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Message</label>
@@ -874,7 +891,6 @@
                 <textarea  id="message"name="message" cols="40" rows="5"></textarea>
               </div>
             <button
-              data-toggle="modal" data-target="#exampleModal"
               id="button"
               type="submit"
               class="btn btn-primary"
@@ -1004,10 +1020,11 @@
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response =>
           console.log('Success!', response))
+          alert("Information Submitted Succesfully") 
+          form.reset() 
         .catch(error => console.error('Error!', error.message))
-        form.reset()
       } else{
-        console.log("no bueno")
+        alert("Please Accept the Data Protection Checkbox")
       }
     })
   </script>
