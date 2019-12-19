@@ -237,11 +237,6 @@ form {
   margin-left: 20px;
   margin-bottom: 40px;
 }
-.mapboxgl-marker {
-  background-image: url("map-marker-alt-solid.svg");
-  background-size: cover;
-  cursor: pointer;
-}
 #list {
   margin-top: 80px;
 }
