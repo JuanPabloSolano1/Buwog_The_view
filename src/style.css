@@ -532,3 +532,6 @@ select.form-control {
 select.placeholder {
   opacity: 0.8;
 }
+.mapboxgl-canary {
+  visibility: visible;
+}
