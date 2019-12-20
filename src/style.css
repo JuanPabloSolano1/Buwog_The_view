@@ -103,7 +103,7 @@ form {
   #house1 {
     width: 380px !important;
     word-spacing: normal !important;
-    text-align: center  !important;
+    text-align: center !important;
     font-size: 12px !important;
   }
   #house2 {
@@ -117,8 +117,8 @@ form {
   }
   #message {
     width: 300px !important;
+  }
 }
-
 #text {
   width: 41%;
   position: absolute;
