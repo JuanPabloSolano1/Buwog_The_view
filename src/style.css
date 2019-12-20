@@ -36,7 +36,11 @@ form {
 }
 @media only screen and (max-width: 600px) {
   img#images {
-    height: 560px;
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    object-fit: cover;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -47,15 +51,74 @@ form {
 }
 @media only screen and (max-width: 600px) {
   #text {
-    width: 85% !important;
+    width: 100% !important;
     position: absolute;
-    margin-left: 2% !important;
+    margin-left: 0% !important;
     text-align: center !important;
-    font-size: 3vw !important;
+    font-size: 1vw !important;
     padding-bottom: 40px !important;
     padding-top: 10px !important;
   }
 }
+@media only screen and (max-width: 600px) {
+  #home-title {
+    font-size: 13.5px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #home-text {
+    font-size: 12.5px !important;
+    letter-spacing: 0px !important;
+    margin-left: 0px !important;
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #home-list {
+    margin-left: 30px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #contact {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #features {
+    margin-left: 120px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slider img {
+    height: 320px !important;
+  }
+  #slider-bg {
+    height: 400px !important;
+  }
+  #house1 {
+    width: 380px !important;
+    word-spacing: normal !important;
+    text-align: center  !important;
+    font-size: 12px !important;
+  }
+  #house2 {
+    width: 380px !important;
+    word-spacing: normal !important;
+    text-align: center !important;
+    font-size: 12px !important;
+  }
+  form {
+    width: 390px !important;
+  }
+  #message {
+    width: 300px !important;
+}
+
 #text {
   width: 41%;
   position: absolute;
