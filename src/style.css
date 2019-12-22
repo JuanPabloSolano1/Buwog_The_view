@@ -154,6 +154,18 @@ form {
   #location-image {
     margin-left: 10px !important;
   }
+  #location-text ul {
+    padding-left: 20px !important;
+  }
+  #location-container {
+    padding-top: 10px !important;
+  }
+  .location {
+    margin: 0 40px !important;
+  }
+  #get h2 {
+    margin-right: 5px !important;
+  }
 }
 #text {
   width: 41%;
