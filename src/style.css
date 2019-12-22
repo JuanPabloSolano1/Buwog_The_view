@@ -131,9 +131,8 @@ form {
     margin-left: 10px !important;
     font-size: 12px !important;
   }
-  #location-box {
+  .location {
     width: 300px !important;
-    margin: 0 auto !important;
   }
   .footer {
     padding: 0px 11px !important;
@@ -146,6 +145,14 @@ form {
   }
   p.navbar-brand {
     margin: 0 auto !important;
+  }
+  #location-text {
+    width: 380px !important;
+    margin-left: 8px !important;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.2) !important;
+  }
+  #location-image {
+    margin-left: 10px !important;
   }
 }
 #text {
