@@ -165,6 +165,9 @@ form {
   #german-phone {
     display: none;
   }
+  #form-private {
+    text-align: center;
+  }
 }
 #text {
   width: 41%;
