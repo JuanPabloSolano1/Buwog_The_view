@@ -166,6 +166,9 @@ form {
   #get h2 {
     margin-right: 5px !important;
   }
+  #map {
+    height: 330px !important;
+  }
 }
 #text {
   width: 41%;
