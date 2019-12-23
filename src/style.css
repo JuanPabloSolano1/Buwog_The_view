@@ -90,6 +90,7 @@ form {
 @media only screen and (max-width: 600px) {
   #features {
     margin-left: 20px !important;
+    margin-top: 40px !important;
   }
   #feature-text {
     margin-left: 12px !important;
