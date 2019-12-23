@@ -138,7 +138,13 @@ form {
     padding: 0px 6px !important;
   }
   span#contact-phone {
-    display: none;
+    font-size: 11px !important;
+    padding-right: 2px !important;
+    margin-left: 1px !important;
+  }
+  #send {
+    font-size: 11px !important;
+    margin-left: 2px !important;
   }
   img.d-inline-block.align-top {
     margin-right: 1px;
@@ -155,6 +161,9 @@ form {
   }
   #map {
     height: 330px !important;
+  }
+  #german-phone {
+    display: none;
   }
 }
 #text {
