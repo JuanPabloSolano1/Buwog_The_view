@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <!-- UIkit CSS -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>    
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 <!-- UIkit JS -->
@@ -66,57 +68,72 @@
   </head>
   <body>
     <!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
-  <p class="navbar-brand" href="#">
-    <a href="tel:+49 (30) 3385 3919 15"><img src="phone-solid.svg" width="25" height="25" class="d-inline-block align-top" alt="" style="margin-top: 5px;"></a>
-    <span id="contact-phone">Kontaktieren Sie uns unverbindlich<span id="german-phone">: +49 (30) 3385 3919 15</span></span>
-    <a href="https://www.buwog.de/de/project/reservation/buwog-xbergliving?microsite=true"><img src="envelope-regular.svg" width="25" height="25" class="d-inline-block align-top" alt="" style="margin-top: 5px;"></a>
-    <a href="https://www.buwog.de/de/project/reservation/buwog-xbergliving?microsite=true"><span id="send">Jetzt Anfrage Senden</span></a>
-  </p>  
-   </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+            <p class="navbar-brand" href="#">
+                <a href="tel:+49 (30) 3385 3919 15"><img src="phone-solid.svg" width="25" height="25" class="d-inline-block align-top" alt="" style="margin-top: 5px;"></a>
+                <span id="contact-phone"><a href="tel:+49 (30) 3385 3919 15">
+                    Contact us without obligation</a><span id="german-phone"><a href="tel:+49 (30) 3385 3919 15">: +49 (30) 3385 3919 15</a></span></span>
+                <a href="https://www.buwog.de/de/project/reservation/buwog-xbergliving?microsite=true"><img src="envelope-regular.svg" width="25" height="25" class="d-inline-block align-top" alt="" style="margin-top: 5px;"></a>
+                <a href="https://www.buwog.de/de/project/reservation/buwog-xbergliving?microsite=true"><span id="send">Send request now</span></a>
+              </p>  
+          </ul>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+            <li id="german"class="nav-item">
+              <div id="language-german"><img class="language-image"src="https://res.cloudinary.com/a1986/image/upload/v1579084630/flag_uqgmsp.png"/><span class="language">GE</span></div>
+            </li>
+            <li id="english" class="nav-item">
+              <a href="https://happy-snyder-b1e3b8.netlify.com/"><div id="language-english"><img class="language-image"src="https://res.cloudinary.com/a1986/image/upload/v1579084639/english_jzvgq1.png"/><span class="language">EN</span></div></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     <div class="text-center">
-      <img id="image" src="picture1" class="img-fluid" alt="Responsive image" />
+      <img id="image" src="https://res.cloudinary.com/a1986/image/upload/v1579537295/picture1_yj80sr.png" class="img-fluid" alt="Responsive image" />
     </div>
     <div id="contact">
       <a href="https://www.buwog.de/de"><p style="color:#747474">Home</p></a>
       <a href="#services"><p>Project Details</p></a>
-      <a href="#location-container"><p>Location</p></a>
+      <a href="#location-text"><p>Location</p></a>
       <a href="#address"><p>Contact</p></a>
     </div>
     <div id="container">
         <div id="main-container" class="carousel-inner">
           <div id="content" style="background-color: rgba(0, 0, 0, 0.5);">
             <!-- <h1 id="title">BUWOG THE VIEW</h1> -->
+            <div class="carousel-item active">
+              <img
+                style="opacity: 1;"
+                id="images"
+                src="https://res.cloudinary.com/a1986/image/upload/v1579537250/Screenshot_2020-01-14_14.20.38_tjlquy.png"
+                class="img-fluid" alt="Responsive image"
+                alt="..."
+                style=" linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),"
+              />
+            </div> 
             <div id="text">
-                <h3 id="home-title">BUWOG THE VIEW- <br> GRANTS SOUTHWATERN BERLIN AN ARCHITECTURAL HIGHLIGHT ON<br> THE BANKS OF THE DAHME.</h3>
-              <div id="home-text">
-               <p id="home-paragraph">The ensemble is located in residential quarter 52º Nord. 
-                  It brings together a total of 63 condominiums housed in three buildings, with every apartment boasting a direct view over the water. 
-                  Directly in front of the ensemble runs a peaceful, 600-metre-long promenade for rest and relaxation. 
-                  BUWOG THE VIEW consists of three separate buildings (House I, House II, House III) 
-                  and represents the latest construction phase in the ongoing development of 52º Nord.      
-                  Project Highlights: 
+                <h3 id="home-title">BUWOG THE VIEW- <br>Southeast Berlin receives an architectural highlight on<br>Banks of the Dahme.</h3>
+              
+                <div id="home-text">
+               <p id="home-paragraph">
+                The ensemble combines a total of 63 condominiums in three buildings with a direct view of the water.
+                BUWOG The View consists of three individual buildings (House I, House II, House III) and is the latest construction phase in the sustainable district 52 ° North. 
+                Project highlights:
                 <ul id="home-list">
-                 <li> Water views for each and every apartment</li>
+                 <li>Water views for each and every apartment</li>
                  <li>Master bedrooms with ensuite bathrooms</li>
                  <li>Underground parking places optionally available (for electric cars on request)</li>
                 </ul>    
                 </p> 
               </div>  
               </div>
-          </div>
-          <div class="carousel-item active">
-            <img
-              style="opacity: 1;"
-              id="images"
-              src="https://drive.google.com/uc?export=view&id=1Nco7NOihE6hWxX38QVOWG6xpwj2UcR9Q"
-              class="img-fluid" alt="Responsive image"
-              alt="..."
-              style=" linear-gradient(
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.5)
-            ),"
-            />
           </div>
         </div>
         <div id="cards">
@@ -127,9 +144,9 @@
             <div id="battery">
               <img id="car-battery" src="building-solid.svg" />
               <br />
-              <h4 class="card-info">Residential Type</h4>
+              <h4 class="card-info">Availability</h4>
               <p class="card-text">
-                Condominium Apartment building
+                2020
               </p>
               <br />
             </div>
@@ -137,14 +154,14 @@
               <img id="car-battery" src="cube-solid.svg" />
               <br />
               <h4 class="card-info">Area</h4>
-              <p class="card-text">28 m² - 97 m²</p>
+              <p class="card-text">58 m² - 144 m²</p>
               <br />
             </div>
             <div id="battery">
               <img id="car-battery" src="layer-group-solid.svg" />
               <br />
               <h4 class="card-info">Number of Rooms</h4>
-              <p class="card-text">1-3</p>
+              <p class="card-text">2-4</p>
               <br />
             </div>
             <div id="battery">
@@ -174,7 +191,9 @@
                 </div>  
                <div id="feature-text">
                   <img class="feature-check" src="check-square-regular.svg"/><p>Terrace</p>
-                  <img class="feature-check" src="check-square-regular.svg"/><p>Underfloor heating</p>
+                  <img class="feature-check" src="check-square-regular.svg"/><p>Underfloor heating
+
+                  </p>
                   <img class="feature-check" src="check-square-regular.svg"/><p>Balcony</p>
                </div>  
               </div>  
@@ -193,22 +212,22 @@
             </div>
             <div>
               <img
-              src="https://drive.google.com/uc?export=view&id=1SDspAE5V5-tSEVin9vEx7BFab6oKAoCZ"
+              src="https://res.cloudinary.com/a1986/image/upload/v1579011434/Screenshot_2020-01-14_15.16.08_hmsyqj.png"
               />
             </div>
             <div>
               <img
-              src="https://drive.google.com/uc?export=view&id=11NJQzRUs9oUR6y_hfUwwp7_uj0z0SHqI"
+              src="https://res.cloudinary.com/a1986/image/upload/v1579011551/Balcony_bbqnog.png"
               />
             </div>
             <div>
               <img
-              src="https://drive.google.com/uc?export=view&id=158oLNbyQa-J3owfUaVjGy7D-X58xuCqr"
+              src="https://res.cloudinary.com/a1986/image/upload/v1579011642/Buildings_nb6r8u.png"
               />
             </div>
             <div>
               <img
-              src="https://drive.google.com/uc?export=view&id=1eCTmKGetqTBId5WFrXvqbsAZrHE1xdAU"
+              src="https://res.cloudinary.com/a1986/image/upload/v1579011949/Screenshot_2020-01-14_15.24.22_tbiub2.png"
               />
             </div>
           </div>
@@ -217,33 +236,37 @@
           <div id="house-color"></div>
           <h3>House I and III</h3>
           <p>
-            Houses I and III are designed by renowned architectural firm PA GmbH Pätzold Architekten, Berlin.
-             Distinctive facade design makes Houses I and III unique: natural wood and the maritime charm of corten steel create a pleasant contrast.
-             To enhance the allusions to shipbuilding and watercraft, Houses I and III possess an extraordinary trapezoidal shape.
-             The arrangement of the living areas at the corners of each building makes for varied views from every apartment: overlooking the water and bathed in sunlight,
-             you're bound to discover delight in the sparkling play of waves time and again.
+            Houses I and III are designed by renowned architectural firm PA GmbH Pätzold Architekten, Berlin. Distinctive facade design makes Houses I and III unique: natural wood and the maritime charm of corten steel create a pleasant contrast. To enhance the allusions to shipbuilding and watercraft, Houses I and III possess an extraordinary trapezoidal shape.
+            The arrangement of the living areas at the corners of each building makes for varied views from every apartment: overlooking the water and bathed in sunlight, 
+            you're bound to discover delight in the sparkling play of waves time and again.
+
           </p>
-          <img src="https://drive.google.com/uc?export=view&id=1FitJUB5EOuvM4MWJcyQzAI9CuJpJfa1T"/>
+          <img src="https://res.cloudinary.com/a1986/image/upload/v1579011153/Haus1_bqctjb.png"/>
         </div>
         <div id="house2">
           <div id="house-color"></div>
           <h3>House II</h3>
           <p>
-            House II, from the renowned architectural offices of LOVE (Graz, Austria), impresses with its floating footbridges resembling floating jetties and a facade that opens to the east and west. The western side of House II offers a special facade with modern glass folding walls that can be fully opened up to catch the evening sun. Residents of House II enjoy a light and open atmosphere with waterside views direct over the river from large balconies and terraces connected by 'floating jetties' suspended above the ground. This unique footbridge system communicates between the apartments and spacious terraces, providing a common area for recreation and movement.
+            House II, from the renowned architectural offices of LOVE (Graz, Austria), impresses with its floating footbridges resembling floating jetties and a facade that opens to the east and west. 
+            The western side of House II offers a special facade with modern glass folding walls that can be fully opened up to catch the evening sun. Residents of House II enjoy a light and open atmosphere with waterside views direct over the river from large balconies and terraces connected by 'floating jetties' suspended above the ground.
+            This unique footbridge system communicates between the apartments and spacious terraces, providing a common area for recreation and movement.
+
           </p>
-          <img src="https://drive.google.com/uc?export=view&id=1oWFY0iJksIRy_EJOvcbpzqTLU13xsBUP"/>
+          <img 
+          src="apartment2.jpg"/>
         </div>
         <hr>
         <div id="location-text">
           <div id="house-color"></div>   
           <h2 id="get">Location</h2>  
-          <p class="location">At 52º Nord, the best of country life brings waterside leisure and recreation together with optimal connections to the city. This is fundamental to the increasing popularity of Treptow-Köpenick in recent years, helped along by positive economic developments in the Adlershof area such as the establishment of nearby science and business development centre WISTA.
+          <p class="location">At 52º Nord, the best of country life brings waterside leisure and recreation together with optimal connections to the city. 
+            This is fundamental to the increasing popularity of Treptow-Köpenick in recent years, helped along by positive economic developments in the Adlershof area such as the establishment of nearby science and business development centre WISTA. 
             All the advantages of this top location at a glance:
           <p class="location"> Perfect connections to city highways (A 113, A 117, A10)</p> 
           <img
           style="opacity: 1;"
           id="location-image"
-          src="https://drive.google.com/uc?export=view&id=1Kt9k_VAUwX_B4IJke6Xo8lxVZP03QQMP"
+          src="https://res.cloudinary.com/a1986/image/upload/v1579538489/Lange_at25sh.png"
           class="img-fluid" alt="Responsive image"
           alt="..."
           style=" linear-gradient(
@@ -252,25 +275,28 @@
         ),"
         /> 
           <ul id="location-list">
-          <li class="location"> Approx. 10 minutes by car to WISTA, Europe's most modern technology park </li> 
-          <li class="location"> Approx. 15 minutes by car to Berlin's Schönefeld airport</li>
-          <li class="location"> Approx. 40 minutes from S-Bahn train station Grünau to Alexanderplatz, Friedrichstrasse, and Berlin central station</li>
+          <li class="location">Approx. 10 minutes by car to WISTA, Europe's most modern technology park</li> 
+          <li class="location">Approx. 15 minutes by car to Berlin's Schönefeld airport</li>
+          <li class="location">Approx. 40 minutes from S-Bahn train station Grünau to Alexanderplatz, Friedrichstrasse, and Berlin central station</li>
           </ul>
             </p>
             <div id="map"></div> 
           </div>
         <div>
-          <h2 id="get">Get in Touch</h2>
+          <h2 id="get">Get in Touch.</h2>
           <p id="address">
+           You are also welcome to visit our info point<br>
             Regattastraße 11, 12527 Berlin<br/>
-            +49 (0) 30 - 338 539 1915
+            +49 (0) 30 - 338 539 1915<br/>
+	          Opening hours:<br/>
+            Mi. 15-18 Uhr, Sa. + So. 14-16 hr<br/>
+            As well as by appointment
           </p>
           <form id="final-form" name="submit-to-google-sheet">
               <div class="form-group">
                   <select name="genre" class="form-control">
-                    <option class="form-control"value="Mr">Mr.</option>
-                    <option class="form-control"value="Miss">Frau/Herr.</option>
-                    <option class="form-control"value="Mrs">Ms.</option>
+                    <option class="form-control"value="Mr">Mr</option>
+                    <option class="form-control"value="Mrs">Ms</option>
                   </select>
                  </div> 
             <div class="form-group">
@@ -281,7 +307,7 @@
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                placeholder="Enter email"
+        
                 required 
               />
             </div>  
@@ -293,7 +319,7 @@
                 type="text"
                 class="form-control"
                 id="exampleInputPassword1"
-                placeholder="Name"
+          
                 required 
               />
             </div>
@@ -304,13 +330,13 @@
                 type="text"
                 class="form-control"
                 id="exampleInputPassword1"
-                placeholder="Last Name"
+             
                required 
               />
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Phone Number</label>
-              <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter Phone Number" required />
+              <input type="tel" id="phone" name="phone" class="form-control" required />
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Message</label>
@@ -325,14 +351,19 @@
               Submit
             </button>
           </form>
+          <div class="text-center">
+            <div class="g-recaptcha" data-sitekey="6LfvBM8UAAAAAKcQuTfHGT4OAOykvDhsDwbDEJ4i"></div>
+        </div>   
           <div>
             <p id="form-private">
                 <input type="checkbox" id="scales" name="scales"
                 >
-               <label for="scales">I HEREBY ACCEPT THE DATA PROTECTION INFORMATION.*</label>
+               <label for="scales">
+                  I HEREBY ACCEPT THE PRIVACY POLICY. *</label>
                <br>
-                Mit dem Absenden dieses Formulars willige ich ein, dass meine oben eingetragenen Angaben zur Bearbeitung meiner Bewerbung um eine Immobilie sowie Zusendung näherer Angaben zu dieser Immobilie verarbeitet werden. 
-                Die <a id="private-link"href="https://www.buwog.de/de/datenschutz">Datenschutzhinweise</a> der BUWOG habe ich zur Kenntnis genommen.
+                
+                By submitting this form, I consent to the processing of the information I entered above in order to process my application for a property and to send me more details about this property. I have read the <a id="private-link"href="https://www.buwog.de/de/datenschutz">data protection information</a> of BUWOG.
+                </a>
             </p>
           </div>
         </div>
@@ -366,7 +397,6 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"
     ></script>
-
     <script type="text/javascript">
       $(".slider").slick({
         dots: true,
@@ -402,14 +432,22 @@
           }
         ]
       });
-    </script>
+    </script> 
+
   </body>
   <div class="footer">
       <div class="footer-links">
-        <a style="text-decoration:none;" href="https://www.buwog.de/de/datenschutz"><p>PRIVACY</p></a>
-        <a style="text-decoration:none;" href="https://www.buwog.de/de/project/reservation/buwog-xbergliving?microsite=true"><p>CONTACT</p></a>
-        <a style="text-decoration:none;" href="https://xbergliving.buwog.com/impressum/"><p>IMPRINT</p></a>
-        <a style="text-decoration:none;" href="https://xbergliving.buwog.com/sitemap/"><p>SITEMAP</p></a>
+        <a style="text-decoration:none;" href="https://www.buwog.de/de/datenschutz"><p>DATA PROTECTION</p></a>
+        <a style="text-decoration:none;" href="https://https://www.buwog.de/de/impressum"><p>IMPRINT</p></a>
+       <div></div>    
+         <div id="footer_languages">
+            <div id="german"class="nav-item">
+              <div id="language-german"><img class="language-image"src="https://res.cloudinary.com/a1986/image/upload/v1579084630/flag_uqgmsp.png"/><span class="language">GE</span></div>
+            </div>
+            <div id="english" class="nav-item">
+              <a href="https://happy-snyder-b1e3b8.netlify.com/"><div id="language-english"><img class="language-image"src="https://res.cloudinary.com/a1986/image/upload/v1579084639/english_jzvgq1.png"/><span class="language">EN</span></div></a>
+            </div>
+          </div>
       </div>
     </div>
   <script>
@@ -429,7 +467,7 @@
     el.style.height = "60px";
     el.style.backgroundImage.src = "map-marker-solid.svg";
     // make a marker for each feature and add to the map
-    new mapboxgl.Marker(el).setLngLat([13.5736508, 52.4269251]).addTo(map);
+    new mapboxgl.Marker(el).setLngLat([13.575971, 52.427218]).addTo(map);
   </script>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
   <script>
@@ -439,19 +477,20 @@
     let checkbox = document.querySelector("#scales")
     form.addEventListener('submit', e => {
       e.preventDefault()
-      if(checkbox.checked == true){
+      if(checkbox.checked == true && grecaptcha.getResponse() !== ""){
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response =>
           console.log('Success!', response))
           alert("Information Submitted Succesfully") 
           form.reset() 
         .catch(error => console.error('Error!', error.message))
-      } else{
+      }else if(grecaptcha.getResponse() == ""){
+        alert("Please accept the Recaptcha")
+      }else{ 
         alert("Please Accept the Data Protection Checkbox")
       }
     })
   </script>
-  <script src="map.js"></script>
   <script>
 import StylesControl from "mapbox-gl-controls/lib/styles";
 
