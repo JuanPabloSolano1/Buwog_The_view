@@ -208,7 +208,7 @@ ul {
   p#home-paragraph {
     font-size: 14px !important;
     word-break: break-word;
-    text-align: center;
+    text-align: justify;
   }
   #footer_languages {
     display: flex;
@@ -235,7 +235,9 @@ ul {
     /* font-size: 19px; */
     font-size: 0.95rem !important;
     color: #717273;
-    word-break: break-all;
+    text-align: justify;
+    word-break: break-word;
+    word-spacing: 1px;
   }
   #house2 {
     width: 380px !important;
@@ -245,7 +247,9 @@ ul {
   #house2 p {
     font-size: 0.95rem !important;
     color: #717273;
-    word-break: break-all;
+    text-align: justify;
+    word-break: break-word;
+    word-spacing: 1px;
   }
   form {
     width: 375px !important;
@@ -260,8 +264,10 @@ ul {
   }
   .location {
     width: 300px !important;
-    word-break: break-all;
     font-size: 0.95rem !important;
+    text-align: justify;
+    word-break: break-word;
+    word-spacing: 1px !important;
   }
   .footer {
     padding: 0px 6px !important;
