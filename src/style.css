@@ -262,6 +262,12 @@ ul {
     margin-left: 10px !important;
     font-size: 12px !important;
   }
+
+  li.location {
+    word-break: break-word;
+    word-spacing: 1px !important;
+    text-align: left !important;
+  }
   .location {
     width: 300px !important;
     font-size: 0.95rem !important;
@@ -274,7 +280,7 @@ ul {
   }
   span#contact-phone {
     font-size: 11px !important;
-    padding-right: 20px !important;
+    padding-right: 10px !important;
     margin-left: 1px !important;
   }
   #send {
